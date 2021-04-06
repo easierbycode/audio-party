@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "parcel": "^1.12.3",
+    "phaser": "^3.54.0"
+  },
+  "scripts": {
+    "build": "rimraf docs && parcel build src/index.html --out-dir docs --public-url /audio-party/",
+    "dev": "rimraf www && parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "typescript": "^4.2.3"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
